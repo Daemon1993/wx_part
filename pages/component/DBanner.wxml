@@ -1,0 +1,14 @@
+<!--component/DBanner.wxml-->
+
+
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+	<block wx:for="{{items}}" wx:key="*this">
+		<swiper-item class="db_main">
+
+			<text>{{item.title}}</text>
+			<image src="{{item.image}}"/>
+
+		</swiper-item>
+	</block>
+</swiper>

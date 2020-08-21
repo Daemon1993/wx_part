@@ -1,0 +1,11 @@
+<dbanner items="{{net_banners}}" />
+
+<scroll-view class="sv_main" scroll-y="true">
+
+	<block wx:for="{{ganhuo_items}}" wx:key="*this">
+		<view class="scroll-view-item  " bindtap="scroll_item_tap" data-index="{{item}}">
+			<image src="{{item.images[0]}}" class="scroll_image" />
+			<text user-selectable="true" class="scroll_text">{{item.desc}}</text>
+		</view>
+	</block>
+</scroll-view>

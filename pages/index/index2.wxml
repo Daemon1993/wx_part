@@ -1,0 +1,9 @@
+<view class="main">
+
+	<Tabs items="{{tab_items}}" bindtap_check="tap_check1" />
+
+	<view class="content">
+		 {{tab_check.type}}
+	</view>
+
+</view>

@@ -1,0 +1,14 @@
+<!--pages/component/tabs/Tabs.wxml-->
+
+
+<scroll-view scroll-x="true" scroll-left="{{scrollleft}}" >
+	<view class="tabs">
+		<view wx:for="{{items}}" wx:key="_id" >
+			<view id="tab{{index}}" class="tab {{currentTabIndex==index?'selected':''}}" bindtap="tap_check" data-index="{{index}}">
+				{{item.type}}
+			</view>
+		</view>
+	</view>
+
+
+</scroll-view>

@@ -1,0 +1,29 @@
+/* pages/component/tabs/Tabs.wxss */
+
+
+
+.tabs {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  padding: 5rpx;
+}
+
+
+ 
+.tab {
+  width: 200rpx;
+  display: flex;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  margin: 5rpx;
+
+  background: rebeccapurple;
+}
+
+.selected {
+  background: blue;
+}
