@@ -1,0 +1,36 @@
+/* pages/component/item01/Item01.wxss */
+
+
+
+.scroll-view-item {
+  height: 300rpx;
+ 
+  margin-top: 5rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  background: white;
+}
+
+.scroll_image {
+  height: 200rpx;
+  width: 200rpx;
+
+}
+
+.scroll_text {
+
+  flex: 1;
+  height: 200rpx;
+  /* 元素溢出内容  隐藏 */
+  overflow: hidden;
+
+
+  /* 元素溢出打点 */
+  text-overflow: ellipsis;
+  margin-left: 10rpx;
+
+
+   
+}

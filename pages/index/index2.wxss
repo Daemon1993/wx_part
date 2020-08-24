@@ -1,3 +1,4 @@
+@import "./index2.skeleton.wxss";
 
 page{
   height: 100%;

@@ -4,12 +4,14 @@ Component({
     items: [],
     net_banners: [],
     banner_text: '',
-    ganhuo_items: []
+    ganhuo_items: [],
+    loading:true,
+    hiddenMain:true,
   },
 
 
   lifetimes: {
-    attached: function () {
+    attached () {
       console.log('attached')
     },
     moved: function () {
@@ -26,7 +28,7 @@ Component({
   },
 
   methods: {
-    getBaseData: function () {
+    getBaseData(){
       console.log("getBaseData")
       var that = this
       wx.request({
@@ -35,7 +37,8 @@ Component({
           // console.log(res.data.data) // 服务器回包信息
           that.setData({
             net_banners: res.data.data,
-            banner_text: res.data.data[0].title
+            banner_text: res.data.data[0].title,
+            loading:true,
           })
         }
       })
@@ -46,17 +49,20 @@ Component({
           // console.log(res.data.data)
 
           that.setData({
-            ganhuo_items: res.data.data
+            ganhuo_items: res.data.data,
+            hiddenMain:true,
           })
         }
       })
     },
 
-    scroll_item_tap: function (event) {
-      var url = event.currentTarget.dataset['index'].url
+    scroll_item_tap: function (url) {
+      
+
+      // console.log(url.detail)
 
       wx.navigateTo({
-        url: '../web_h5/Web_H5?url='+url,
+        url: '../web_h5/Web_H5?url='+url.detail,
       })
       // wx.miniProgram.navigateTo({
       //   url: url
@@ -68,12 +74,12 @@ Component({
   pageLifetimes: {
     show() {
 
-      if (typeof this.getTabBar === 'function' &&
-        this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 0
-        })
-      }
+      // if (typeof this.getTabBar === 'function' &&
+      //   this.getTabBar()) {
+      //   this.getTabBar().setData({
+      //     selected: 0
+      //   })
+      // }
 
       var tempitems = [100]
       for (var i = 0; i < 100; i++) {

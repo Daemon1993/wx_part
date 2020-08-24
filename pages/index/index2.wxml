@@ -1,9 +1,14 @@
-<view class="main">
+
+
+<import src="index2.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" data="{{hidden_main}}"/>
+
+<view class="main"  data-skeleton-hide="{{loading}}">
 
 	<Tabs items="{{tab_items}}" bindtap_check="tap_check1" />
 
 	<view class="content">
-		 {{tab_check.type}}
+		{{tab_check.type}}
 	</view>
 
 </view>

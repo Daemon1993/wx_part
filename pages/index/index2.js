@@ -1,10 +1,14 @@
+var util = require("../../utils/util")
 Component({
 
   lifetimes: {
 
     ready() {
       // console.log('ready')
+
+
       this.getAllTypes();
+
     }
   },
 
@@ -21,7 +25,9 @@ Component({
 
   data: {
     tab_check: 0,
-    tab_items:[]
+    tab_items: [],
+    loading: true,
+    hidden_main: true
   },
   methods: {
     tap_check1: function (params) {
@@ -29,6 +35,9 @@ Component({
       this.setData({
         tab_check: params.detail
       })
+
+
+
     },
     getAllTypes: function () {
       var that = this
@@ -37,8 +46,11 @@ Component({
         success: function (res) {
           console.log(res.data.data)
           that.setData({
-            tab_items:res.data.data
+            tab_items: res.data.data,
+            loading: false,
+            hidden_main: false,
           })
+
 
         }
       })

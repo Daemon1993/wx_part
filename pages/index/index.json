@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "dbanner":"../component/DBanner"
+    "dbanner":"../component/DBanner",
+    "Item01":"../component/item01/Item01"
   }
 }

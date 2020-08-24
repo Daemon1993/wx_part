@@ -6,4 +6,6 @@ function rpx2px(rpx){
   return px
 }
 
-module.exports.rpx2px=rpx2px
+module.exports={
+  rpx2px:rpx2px
+}

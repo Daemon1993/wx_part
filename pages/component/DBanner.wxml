@@ -3,10 +3,9 @@
 
 
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-	<block wx:for="{{items}}" wx:key="*this">
+	<block wx:for="{{items}}" wx:key="id">
 		<swiper-item class="db_main">
-
-			<text>{{item.title}}</text>
+ 
 			<image src="{{item.image}}"/>
 
 		</swiper-item>

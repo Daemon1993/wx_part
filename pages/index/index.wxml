@@ -1,11 +1,14 @@
-<dbanner items="{{net_banners}}" />
 
-<scroll-view class="sv_main" scroll-y="true">
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}"/>
 
-	<block wx:for="{{ganhuo_items}}" wx:key="*this">
-		<view class="scroll-view-item  " bindtap="scroll_item_tap" data-index="{{item}}">
-			<image src="{{item.images[0]}}" class="scroll_image" />
-			<text user-selectable="true" class="scroll_text">{{item.desc}}</text>
-		</view>
-	</block>
+
+<dbanner items="{{net_banners}}" data-skeleton-hide="{{loading}}" />
+
+<scroll-view class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}" >
+
+
+	<Item01 item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
+
+
 </scroll-view>

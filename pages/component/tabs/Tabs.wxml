@@ -1,7 +1,7 @@
 <!--pages/component/tabs/Tabs.wxml-->
 
 
-<scroll-view scroll-x="true" scroll-left="{{scrollleft}}" >
+<scroll-view scroll-x="true" scroll-left="{{scrollleft}}" scroll-with-animation="true" >
 	<view class="tabs">
 		<view wx:for="{{items}}" wx:key="_id" >
 			<view id="tab{{index}}" class="tab {{currentTabIndex==index?'selected':''}}" bindtap="tap_check" data-index="{{index}}">
