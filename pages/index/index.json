@@ -2,6 +2,7 @@
   "usingComponents": {
     "dbanner":"../component/DBanner",
     "Item01":"../component/item01/Item01",
-    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
+    "mp-cell": "../../miniprogram_npm/weui-miniprogram/cell/cell",
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index"
   }
 }
