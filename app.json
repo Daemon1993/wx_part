@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/index/index2",
-    "pages/web_h5/Web_H5"
+    "pages/web_h5/Web_H5",
+    "pages/order/Oder"
   ],
   "tabBar": {
     "color": "#7A7E83",
@@ -31,8 +32,5 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "useExtendedLib": {
-   
-  }
-
+  "useExtendedLib": {}
 }

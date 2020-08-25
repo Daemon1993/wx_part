@@ -1,0 +1,66 @@
+/* pages/order/item/order_item.wxss */
+
+
+.main {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  height: 400rpx;
+  margin: 20rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+
+.main1 {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 240rpx;
+  padding: 10rpx;
+
+
+}
+
+.img {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.main1_center {
+  display: flex;
+  flex: 1;
+  margin-left: 20rpx;
+  height: 180rpx;
+  flex-direction: column;
+
+}
+
+.order_status {
+
+  height: 180rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main2 {
+  background-color: blueviolet;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.main3{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

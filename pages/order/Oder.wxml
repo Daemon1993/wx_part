@@ -1,0 +1,16 @@
+<!--pages/order/Oder.wxml-->
+<van-tabs swipeable sticky active="{{ active }}" bind:change="onChange">
+	<van-tab class="aaa" wx:key="*this" wx:for="{{tab_items}}" title="{{item}}">
+
+		<recycle-view batch="{{batchSetRecycleData}}" id="recycleId" class="r_v">
+
+			<recycle-item wx:for="{{recycleList}}" wx:key="id" class="r_v_i">
+				<order_item />
+			</recycle-item>
+		</recycle-view>
+
+
+
+	</van-tab>
+
+</van-tabs>

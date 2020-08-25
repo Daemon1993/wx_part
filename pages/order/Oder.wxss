@@ -1,0 +1,16 @@
+/* pages/order/Oder.wxss */
+
+
+.r_v {
+  background-color: chocolate;
+ 
+}
+
+.r_v_i {
+  background-color: cornflowerblue;
+  
+  width: 100% ;
+}
+
+ 
+ 

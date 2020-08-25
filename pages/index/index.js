@@ -57,16 +57,16 @@ Component({
     },
 
     scroll_item_tap: function (url) {
-      
-
       // console.log(url.detail)
-
       wx.navigateTo({
         url: '../web_h5/Web_H5?url='+url.detail,
       })
-      // wx.miniProgram.navigateTo({
-      //   url: url
-      // })
+    }
+    ,
+    go2Oder:function(event){
+        wx.navigateTo({
+          url: '../order/Oder',
+        })
     }
 
   },
@@ -74,6 +74,10 @@ Component({
   pageLifetimes: {
     show() {
 
+    
+     wx.setNavigationBarTitle({
+       title: 'Gank',
+     })
       // if (typeof this.getTabBar === 'function' &&
       //   this.getTabBar()) {
       //   this.getTabBar().setData({
@@ -81,13 +85,6 @@ Component({
       //   })
       // }
 
-      var tempitems = [100]
-      for (var i = 0; i < 100; i++) {
-        tempitems[i] = i;
-      }
-      this.setData({
-        items: tempitems
-      })
     }
   },
 

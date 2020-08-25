@@ -14,6 +14,11 @@ Component({
 
   pageLifetimes: {
     show() {
+
+      wx.setNavigationBarTitle({
+        title: 'My',
+      })
+
       if (typeof this.getTabBar === 'function' &&
         this.getTabBar()) {
         this.getTabBar().setData({

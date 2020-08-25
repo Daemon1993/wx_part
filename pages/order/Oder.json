@@ -1,0 +1,19 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "我的订单",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+
+    "order_item":"./item/order_item",
+
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-tab": "../../miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "../../miniprogram_npm/@vant/weapp/tabs/index",
+
+    "recycle-view": "../../miniprogram_npm/miniprogram-recycle-view/recycle-view",
+    "recycle-item": "../../miniprogram_npm/miniprogram-recycle-view/recycle-item"
+  }
+}
