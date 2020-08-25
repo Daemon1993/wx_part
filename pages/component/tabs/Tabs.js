@@ -63,9 +63,11 @@ Component({
   methods: {
     tap_check: function (event) {
 
+      console.log(event.currentTarget.offsetLeft  +'   '+this.data._center_offleft)
       var current_tab_offleft = event.currentTarget.offsetLeft + this.data._tab_width_px / 2
+
       if (current_tab_offleft > this.data._center_offleft) {
-        // console.log('偏右 开始左移动到center size '+(current_tab_offleft-this.data._center_offleft))
+        console.log('偏右 开始左移动到center size '+(current_tab_offleft-this.data._center_offleft))
         this.setData({
           scrollleft: current_tab_offleft - this.data._center_offleft
         })

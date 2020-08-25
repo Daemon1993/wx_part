@@ -38,7 +38,7 @@ Component({
           that.setData({
             net_banners: res.data.data,
             banner_text: res.data.data[0].title,
-            loading:true,
+            loading:false,
           })
         }
       })

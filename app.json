@@ -30,6 +30,10 @@
     "navigationBarTitleText": "Gank",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+  
+    "weui": true
+  }
 
 }

@@ -1,14 +1,11 @@
-
-<import src="index.skeleton.wxml"/>
-<template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}"/>
-
-
-<dbanner items="{{net_banners}}" data-skeleton-hide="{{loading}}" />
-
-<scroll-view class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}" >
+<import src="index.skeleton.wxml" />
+<template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}" />
 
 
-	<Item01 item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
+<scroll-view class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}">
 
+	<dbanner items="{{net_banners}}" data-skeleton-hide="{{loading}}" />
+
+	<Item01  item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
 
 </scroll-view>

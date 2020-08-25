@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "dbanner":"../component/DBanner",
-    "Item01":"../component/item01/Item01"
+    "Item01":"../component/item01/Item01",
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
   }
 }

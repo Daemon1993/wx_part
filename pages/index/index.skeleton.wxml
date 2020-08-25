@@ -1,5 +1,5 @@
 <!--
-此文件为开发者工具生成，生成时间: 2020/8/24 下午2:46:00 
+此文件为开发者工具生成，生成时间: 2020/8/24 下午5:59:25 
 使用方法：
 在 pages\index\index.wxml 引入模板
 
@@ -17,23 +17,20 @@
 -->
 <template name="skeleton">
   <view class="sk-container">
-    <view is="pages/component/DBanner">
-      <swiper autoplay="true" duration="500" indicator-dots="true" interval="2000" current="2" current-item-id="true">
-        <swiper-item class="DBanner--db_main" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
-          <text class="sk-transparent sk-text-14-2857-174 sk-text">
-            干货集中营新版更新
-          </text>
-          <image class="sk-image">
-          </image>
-        </swiper-item>
-      </swiper>
-    </view>
     <scroll-view class="sv_main" scroll-y="true">
+      <view is="pages/component/DBanner" hidden="{{true}}">
+        <swiper autoplay="true" duration="500" indicator-dots="true" interval="2000" current="2" current-item-id="true">
+          <swiper-item class="DBanner--db_main" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+            <image class="sk-image">
+            </image>
+          </swiper-item>
+        </swiper>
+      </view>
       <view is="pages/component/item01/Item01">
         <view class="Item01--scroll-view-item" data-index="[object Object]">
           <image class="Item01--scroll_image sk-image">
           </image>
-          <text class="Item01--scroll_text sk-transparent sk-text-14-2857-929 sk-text">
+          <text class="Item01--scroll_text sk-transparent sk-text-18-7500-204 sk-text">
             DateTimePicker 一个简约、漂亮的日期时间选择器，支持大面积自定义UI，内置日期时间选择弹窗，基于 Google BottomSheetDialog，可直接使用。
           </text>
         </view>
@@ -42,7 +39,7 @@
         <view class="Item01--scroll-view-item" data-index="[object Object]">
           <image class="Item01--scroll_image sk-image">
           </image>
-          <text class="Item01--scroll_text sk-transparent sk-text-14-2857-438 sk-text">
+          <text class="Item01--scroll_text sk-transparent sk-text-18-7500-522 sk-text">
             An CLI to automate database backups with customizable recurring schedules.
           </text>
         </view>
@@ -51,9 +48,6 @@
         <view class="Item01--scroll-view-item" data-index="[object Object]">
           <image class="Item01--scroll_image sk-image">
           </image>
-          <text class="Item01--scroll_text sk-transparent sk-text-14-2857-144 sk-text">
-            类似京东、淘宝首页体验的嵌套滑动吸顶效果
-          </text>
         </view>
       </view>
     </scroll-view>

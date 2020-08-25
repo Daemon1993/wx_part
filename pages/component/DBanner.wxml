@@ -5,7 +5,7 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 	<block wx:for="{{items}}" wx:key="id">
 		<swiper-item class="db_main">
- 
+
 			<image src="{{item.image}}"/>
 
 		</swiper-item>

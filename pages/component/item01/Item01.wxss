@@ -4,13 +4,13 @@
 
 .scroll-view-item {
   height: 300rpx;
- 
-  margin-top: 5rpx;
+   
   display: flex;
   align-items: center;
   flex-direction: row;
 
   background: white;
+  margin: 16rpx;
 }
 
 .scroll_image {
@@ -22,15 +22,11 @@
 .scroll_text {
 
   flex: 1;
-  height: 200rpx;
-  /* 元素溢出内容  隐藏 */
+  display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+  -webkit-box-orient: vertical;/*设置或检索伸缩盒对象的子元素的排列方式：从上向下垂直排列子元素。*/
+  -webkit-line-clamp:3;/*几行，这里是3行*/
   overflow: hidden;
+  text-overflow:ellipsis;
 
 
-  /* 元素溢出打点 */
-  text-overflow: ellipsis;
-  margin-left: 10rpx;
-
-
-   
 }
