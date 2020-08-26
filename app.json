@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/index/index2",
     "pages/web_h5/Web_H5",
@@ -32,5 +33,9 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "useExtendedLib": {}
+  "useExtendedLib": {},
+  "usingComponents": {
+
+    "l-loading":"./miniprogram_npm/lin-ui/loading/index"
+  }
 }

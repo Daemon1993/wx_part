@@ -7,7 +7,7 @@
 		<van-image radius="10rpx" class="img" fit="cover" width="300rpx" height="180rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
 
 		<view class="main1_center">
-			<text>name</text>
+			<text>{{data.name}}</text>
 			<text>type</text>
 			<text>price</text>
 		</view>
@@ -22,6 +22,7 @@
 
   <view class="main3">
     <text>剩余时间<text style="color:#124785">30:00</text></text>
-    <van-button type="primary">待支付</van-button>
+    <ln-button >待支付</ln-button>
   </view>
+	 
 </view>

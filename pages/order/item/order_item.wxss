@@ -2,17 +2,18 @@
 
 
 .main {
-  background: yellow;
+  background:white;
   display: flex;
   flex-direction: column;
-  height: 400rpx;
-  margin: 20rpx;
+  box-sizing: border-box;
+  height: 410rpx;
   padding: 10rpx;
+  margin: 20rpx;
   border-radius: 10rpx;
 }
 
 .main1 {
-  background: red;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,7 +49,7 @@
 }
 
 .main2 {
-  background-color: blueviolet;
+ 
   height: 100rpx;
   display: flex;
   flex-direction: row;
@@ -57,7 +58,7 @@
 
 }
 
-.main3{
+.main3 {
   margin-top: 10rpx;
   display: flex;
   flex-direction: row;

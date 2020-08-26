@@ -7,6 +7,7 @@ Component({
     ganhuo_items: [],
     loading:true,
     hiddenMain:true,
+    isShow:false,
   },
 
 
@@ -69,6 +70,13 @@ Component({
         })
     }
 
+    ,
+    changeShow:function(event){
+      var that=this;
+      this.setData({
+        isShow:!that.data.isShow
+      })
+    }
   },
 
   pageLifetimes: {

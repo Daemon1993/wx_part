@@ -1,16 +1,18 @@
 <import src="index.skeleton.wxml" />
 <template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}" />
 
+ 
 
 <scroll-view class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}">
-	<mp-cell value="标题文字" footer="weui"></mp-cell>
+ 
 
 	<van-cell title="单元格" value="vant_ui" />
 
 	<van-button type="default" bindtap="go2Oder">订单</van-button>
-
+	<van-button type="default" bindtap="changeShow">弹出详情</van-button>
 	<dbanner items="{{net_banners}}" data-skeleton-hide="{{loading}}" />
 
 	<Item01 item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
 
 </scroll-view>
+

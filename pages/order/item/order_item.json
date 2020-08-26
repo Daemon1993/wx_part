@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "van-image": "../../../miniprogram_npm/@vant/weapp/image/index",
-    "van-button": "../../../miniprogram_npm/@vant/weapp/button/index"
+    "ln-button": "../../../miniprogram_npm/lin-ui/button/index"
+    
   }
 }

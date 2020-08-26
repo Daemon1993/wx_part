@@ -14,10 +14,11 @@ Page({
     items: [1, 2, 3, 4, 5, 6],
     height: 456,
     width: 100,
+    loading:true
   },
 
   onChange(event) {
-    console.log(event)
+    // console.log(event)
     wx.showToast({
       title: `切换到标签 ${event.detail.name}`,
       icon: 'none',
@@ -37,13 +38,12 @@ Page({
   onReady: function () {
     // let width=wx.getSystemInfoSync().screenWidth;
     // console.log(width)
-    let height = common.rpx2px(400);
+    let height = common.rpx2px(450);
     let width = wx.getSystemInfoSync().windowWidth;
     this.setData({ height: height, width: width });
 
     console.log(width+"   "+height)
     
-   
 
     var ctx = createRecycleContext({
       id: 'recycleId',
@@ -55,11 +55,9 @@ Page({
       }
     })
 
-   
-
 
     let arr = [];
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
       arr.push({
         sid: i,
         name: "监控点" + i,
@@ -69,6 +67,13 @@ Page({
     }
     //将数据append到列表
     ctx.append(arr)
+
+    setTimeout(() => {
+      
+      this.setData({
+        loading:false
+      })
+    }, 2000);
 
   },
   itemSizeFunc: function (item, idx) {
