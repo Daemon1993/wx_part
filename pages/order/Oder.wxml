@@ -11,7 +11,7 @@
 		<recycle-view batch="{{batchSetRecycleData}}" id="recycleId" class="r_v">
 
 			<recycle-item wx:for="{{recycleList}}" wx:key="id" class="r_v_i">
-				<order_item data="{{item}}" />
+				<order_item data="{{item}}" bindorder_item_click="order_item_click" />
 			</recycle-item>
 		</recycle-view>
 
@@ -22,5 +22,8 @@
 
 
 <view class="v_bt_bg">
-	
+	<view class="v_bt_main">
+		<text style="color:white">Alert Msg</text>
+	</view>
+
 </view>

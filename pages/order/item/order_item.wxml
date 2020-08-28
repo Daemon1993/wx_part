@@ -1,7 +1,7 @@
 <!--pages/order/item/order_item.wxml-->
 
 
-<view class="main">
+<view class="main" bindtap="click_item">
 	<view class="main1">
 
 		<van-image radius="10rpx" class="img" fit="cover" width="300rpx" height="180rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />

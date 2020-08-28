@@ -1,7 +1,7 @@
 // pages/order/Oder.js
 
 // const createRecycleContext = require('../../miniprogram_npm/miniprogram-recycle-view')
-var common=require('../common/common.js')
+var common = require('../common/common.js')
 const createRecycleContext = require('miniprogram-recycle-view')
 Page({
 
@@ -14,7 +14,8 @@ Page({
     items: [1, 2, 3, 4, 5, 6],
     height: 456,
     width: 100,
-    loading:true
+    loading: true,
+    alert_show: false
   },
 
   onChange(event) {
@@ -40,17 +41,20 @@ Page({
     // console.log(width)
     let height = common.rpx2px(450);
     let width = wx.getSystemInfoSync().windowWidth;
-    this.setData({ height: height, width: width });
+    this.setData({
+      height: height,
+      width: width
+    });
 
-    console.log(width+"   "+height)
-    
+    console.log(width + "   " + height)
+
 
     var ctx = createRecycleContext({
       id: 'recycleId',
       dataKey: 'recycleList',
       page: this,
       itemSize: { // 这个参数也可以直接传下面定义的this.itemSizeFunc函数
-        width:width,
+        width: width,
         height: height
       }
     })
@@ -69,15 +73,15 @@ Page({
     ctx.append(arr)
 
     setTimeout(() => {
-      
+
       this.setData({
-        loading:false
+        loading: false
       })
     }, 2000);
 
   },
   itemSizeFunc: function (item, idx) {
-    console.log(' itemSizeFunc'+this.data.width)
+    console.log(' itemSizeFunc' + this.data.width)
     return {
       width: this.data.width,
       height: this.data.height
@@ -123,5 +127,32 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  order_item_click: function (event) {
+    console.log('order_item_click ' + this.data.alert_show)
+
+    if (!this.data.alert_show) {
+      this.animate('.v_bt_bg', [{
+          top: '100%'
+        },
+        {
+          top: '30%'
+        },
+      ], 200, () => {console.log('弹出')})
+    } else {
+       
+      this.animate('.v_bt_bg', [{
+          top: '30%'
+        },
+        {
+          top: '100%'
+        },
+      ], 200, () => {console.log('收回')})
+    }
+
+
+    this.setData({
+      alert_show: !this.data.alert_show
+    })
   }
 })

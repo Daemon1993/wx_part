@@ -37,7 +37,12 @@ Component({
       // query.select('.main').boundingClientRect().exec((res) => {
       //   console.log(res)
       // });
+    }
 
+    ,
+    click_item:function(event){
+        console.log('click_item')
+        this.triggerEvent("order_item_click")
     }
   }
 })

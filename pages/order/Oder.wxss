@@ -5,7 +5,7 @@
 
 .r_v_i {
 
-  background-color:rgb(227, 227, 231) ;
+  background-color: rgb(227, 227, 231);
   width: 100%;
   height: 450rpx;
   /* margin-top: 5rpx; */
@@ -13,14 +13,24 @@
 }
 
 
-.v_bt_bg{
-  width: 100%; 
-  height: 100%; 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  z-index: 50; 
-  background: #000; 
-  opacity: 0.5; 
-  
+.v_bt_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 100%;
+  left: 0;
+
+  z-index: 50;
+  background: #000;
+  opacity: 0.5;
+
+}
+
+.v_bt_main {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+ 
 }
