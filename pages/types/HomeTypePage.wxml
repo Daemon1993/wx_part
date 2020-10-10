@@ -1,0 +1,13 @@
+<!--pages/types/HomeTypePage.wxml-->
+
+
+<view class="main">
+	<view class="main_left">
+		<list_item1 items="{{[1,2,3,4,5,6,7,8,9,10,11,12,13]}}" bindselect_tap="select_tap" />
+	</view>
+
+	<view class="main_right">
+		<text>{{content}}</text>
+	</view>
+
+</view>

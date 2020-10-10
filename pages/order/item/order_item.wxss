@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
   height: 410rpx;
   padding: 10rpx;
   margin: 20rpx;

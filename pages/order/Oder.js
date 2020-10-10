@@ -106,6 +106,14 @@ Page({
    */
   onUnload: function () {
 
+    console.log('order onUnload')
+
+    let pages=getCurrentPages();
+    let pre_page=pages[pages.length-2];
+    pre_page.setData({
+      dynamic:'bbbbb'
+    })
+
   },
 
   /**

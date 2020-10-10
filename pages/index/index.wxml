@@ -1,10 +1,15 @@
 <import src="index.skeleton.wxml" />
 <template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}" />
 
- 
+
+
+<van-image  width="300rpx" height="300rpx"  src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1599013193&di=400b7ce517f93064835f992040be9343&src=http://a2.att.hudong.com/36/48/19300001357258133412489354717.jpg">
+	 
+</van-image>
+
 
 <scroll-view class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}">
- 
+
 
 	<van-cell title="单元格" value="vant_ui" />
 
@@ -15,4 +20,3 @@
 	<Item01 item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
 
 </scroll-view>
-

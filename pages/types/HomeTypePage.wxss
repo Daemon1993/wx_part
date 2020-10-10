@@ -1,0 +1,22 @@
+/* pages/types/HomeTypePage.wxss */
+
+page{
+  height: 100%;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.main_left{
+  width: 180rpx;
+}
+
+.main_right{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

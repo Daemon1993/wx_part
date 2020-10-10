@@ -1,5 +1,5 @@
 <!--pages/component/item01/Item01.wxml-->
 <view class="scroll-view-item  " bindtap="scroll_item_tap" data-index="{{item}}" bindtap="scroll_item_tap">
-	<image src="{{item.images[0]}}" class="scroll_image" />
+	<image lazy-load="true" src="{{item.images[0]}}" class="scroll_image" />
 	<text class="scroll_text">{{item.desc}}</text>
 </view>

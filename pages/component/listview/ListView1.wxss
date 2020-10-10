@@ -1,0 +1,19 @@
+/* pages/component/listview/ListView1.wxss */
+
+ 
+.sv_main{
+  height: 100%;
+  width: 100%;
+}
+.v_main{
+
+  height: 100%;
+}
+
+.v_item_main{
+  height: 100rpx;
+  display: flex;
+  background: blue;
+  justify-content: center;
+  align-items: center;
+}

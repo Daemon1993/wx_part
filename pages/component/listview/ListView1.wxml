@@ -1,0 +1,10 @@
+<!--pages/component/listview/ListView1.wxml-->
+
+<scroll-view scroll-y="true" class="sv_main">
+	<view class="v_main">
+
+		<view wx:for="{{items}}" wx:key="_id" class="v_item_main" bindtap="select_tap" data-index="{{index}}">
+			<text>{{item}}</text>
+		</view>
+	</view>
+</scroll-view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "list_item1":"../component/listview/ListView1"
+  }
+}

@@ -5,14 +5,15 @@ Component({
     net_banners: [],
     banner_text: '',
     ganhuo_items: [],
-    loading:true,
-    hiddenMain:true,
-    isShow:false,
+    loading: true,
+    hiddenMain: true,
+    isShow: false,
+    dynamic: 'aaaaa'
   },
 
 
   lifetimes: {
-    attached () {
+    attached() {
       console.log('attached')
     },
     moved: function () {
@@ -29,7 +30,7 @@ Component({
   },
 
   methods: {
-    getBaseData(){
+    getBaseData() {
       console.log("getBaseData")
       var that = this
       wx.request({
@@ -39,7 +40,7 @@ Component({
           that.setData({
             net_banners: res.data.data,
             banner_text: res.data.data[0].title,
-            loading:false,
+            loading: false,
           })
         }
       })
@@ -51,7 +52,7 @@ Component({
 
           that.setData({
             ganhuo_items: res.data.data,
-            hiddenMain:true,
+            hiddenMain: true,
           })
         }
       })
@@ -60,21 +61,20 @@ Component({
     scroll_item_tap: function (url) {
       // console.log(url.detail)
       wx.navigateTo({
-        url: '../web_h5/Web_H5?url='+url.detail,
+        url: '../web_h5/Web_H5?url=' + url.detail,
       })
-    }
-    ,
-    go2Oder:function(event){
+    },
+    go2Oder: function (event) {
         wx.navigateTo({
           url: '../order/Oder',
         })
-    }
+      }
 
-    ,
-    changeShow:function(event){
-      var that=this;
+      ,
+    changeShow: function (event) {
+      var that = this;
       this.setData({
-        isShow:!that.data.isShow
+        isShow: !that.data.isShow
       })
     }
   },
@@ -82,10 +82,12 @@ Component({
   pageLifetimes: {
     show() {
 
-    
-     wx.setNavigationBarTitle({
-       title: 'Gank',
-     })
+      console.log('index Component show '+this.data.dynamic)
+      wx.setNavigationBarTitle({
+        title: '首页',
+      })
+
+
       // if (typeof this.getTabBar === 'function' &&
       //   this.getTabBar()) {
       //   this.getTabBar().setData({
@@ -93,6 +95,9 @@ Component({
       //   })
       // }
 
+    },
+    hiden() {
+      console.log('index Component hiden')
     }
   },
 
