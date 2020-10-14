@@ -1,3 +1,5 @@
+const common = require("../common/common")
+
 Component({
 
   data: {
@@ -8,7 +10,8 @@ Component({
     loading: true,
     hiddenMain: true,
     isShow: false,
-    dynamic: 'aaaaa'
+    dynamic: 'aaaaa',
+    sv_height: '100%'
   },
 
 
@@ -25,8 +28,18 @@ Component({
     ready: function () {
       console.log('ready')
 
+
+
+      common.getScrollViewHeight('l-s-b',10,(sr_height)=>{
+        console.log(sr_height)
+        this.setData({
+          sv_height:sr_height+'px'
+        })
+      })
+
       this.getBaseData();
     }
+
   },
 
   methods: {
@@ -82,7 +95,9 @@ Component({
   pageLifetimes: {
     show() {
 
-      console.log('index Component show '+this.data.dynamic)
+
+
+      console.log('index Component show ' + this.data.dynamic)
       wx.setNavigationBarTitle({
         title: '首页',
       })

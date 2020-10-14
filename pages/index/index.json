@@ -6,6 +6,10 @@
     "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
     "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
     "van-image": "../../miniprogram_npm/@vant/weapp/image/index",
-    "van-loading": "../../miniprogram_npm/@vant/weapp/loading/index"
+    "van-loading": "../../miniprogram_npm/@vant/weapp/loading/index",
+    "lin-search-bar": "../../miniprogram_npm/lin-ui/search-bar/index",
+    "l-grid": "../../miniprogram_npm/lin-ui/grid/index",
+
+    "l-grid-item": "../../miniprogram_npm/lin-ui/grid-item/index"
   }
 }
