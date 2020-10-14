@@ -10,6 +10,8 @@
     "lin-search-bar": "../../miniprogram_npm/lin-ui/search-bar/index",
     "l-grid": "../../miniprogram_npm/lin-ui/grid/index",
 
-    "l-grid-item": "../../miniprogram_npm/lin-ui/grid-item/index"
+    "l-grid-item": "../../miniprogram_npm/lin-ui/grid-item/index",
+    "nc_component":"../component/numcontrol/NumControl"
+  
   }
 }

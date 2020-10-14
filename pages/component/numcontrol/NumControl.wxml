@@ -1,0 +1,9 @@
+<!--pages/component/numcontrol/NumControl.wxml-->
+
+
+<view class="v_main" style="width:{{nc_width}}">
+
+	<text bindtap="click_reduce">-</text>
+	<text>{{value}}{{nc_tag}}</text>
+	<text bindtap="click_add">+</text>
+</view>

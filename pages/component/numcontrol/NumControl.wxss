@@ -1,0 +1,9 @@
+/* pages/component/numcontrol/NumControl.wxss */
+
+
+.v_main {
+
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -5,14 +5,14 @@ function rpx2px(rpx) {
 }
 
 
-function getScrollViewHeight(top_view_id,scroll_view_top_rpx, callback) {
+function getScrollViewHeight(top_view_id,scroll_view_margin_rpx, callback) {
   var query = wx.createSelectorQuery();
   query.select('#' + top_view_id).boundingClientRect()
   query.selectViewport().scrollOffset()
   query.exec(function (res) {
     wx.getSystemInfo({
       success: (result) => {
-        var sr_heigth = result.windowHeight - res[0].height - rpx2px(scroll_view_top_rpx);
+        var sr_heigth = result.windowHeight - res[0].height - rpx2px(scroll_view_margin_rpx);
         callback(sr_heigth)
       },
     })

@@ -2,6 +2,7 @@
 <template is="skeleton" wx-if="{{loading}}" data="{{hiddenMain}}" />
 
 
+
 <lin-search-bar placeholder="搜索" show-cancel="{{false}}" id="l-s-b" />
 <scroll-view style="height:{{sv_height}}" class="sv_main" scroll-y="true" data-skeleton-hide="{{hiddenMain}}">
 	<van-button type="default" bindtap="go2Oder">订单</van-button>
@@ -14,3 +15,8 @@
 		</l-grid>
 	<Item01 item="{{item}}" wx:for="{{ganhuo_items}}" wx:key="id" bindcustomevent1="scroll_item_tap" />
 </scroll-view>
+
+<view style="height:100rpx;width:100%;background-color:red" class="v_foot">
+	<!-- <text >底部Foot</text> -->
+	<nc_component step_value_str="5" nc_tag="A"/>
+</view>

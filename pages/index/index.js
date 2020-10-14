@@ -30,7 +30,7 @@ Component({
 
 
 
-      common.getScrollViewHeight('l-s-b',10,(sr_height)=>{
+      common.getScrollViewHeight('l-s-b',110,(sr_height)=>{
         console.log(sr_height)
         this.setData({
           sv_height:sr_height+'px'

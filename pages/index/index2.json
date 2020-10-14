@@ -2,5 +2,6 @@
   "usingComponents": {
     "Tabs":"../component/tabs/Tabs",
     "Item01":"../component/item01/Item01"
+  
   }
 }
